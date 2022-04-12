@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    </head>
+    <body>
+        <header class="text-gray-600 body-font">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+                <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+                    <span class="ml-3 text-3xl">Logo Agricultural Food</span>
+                </a>
+                <div class="relative mx-8">
+                    <input type="text" class="bg-gray-200 text-md rounded-full w-96 px-4 pl-9 py-2 focus:outline-none" placeholder="Search for products" />
+                    <div class="absolute top-0 flex items-center h-full ml-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="flex flex-wrap items-center text-base justify-center mx-8">
+                    <a href="" class="mx-3 hover:text-gray-900">
+                        <img src="./images/facebook.png" alt="facebook" class="w-8 h-8" />
+                    </a>
+                    <a href="" class="mx-3 hover:text-gray-900">
+                        <img src="./images/youtube.png" alt="youtube" class="w-8 h-8" />
+                    </a>
+                    <a href="" class="mx-3 hover:text-gray-900">
+                        <img src="./images/zalo.png" alt="zalo" class="w-8 h-8" />
+                    </a>
+                    <a href="" class="mx-3 hover:text-gray-900">
+                        <img src="./images/linkedin.png" alt="linkedin" class="w-8 h-8" />
+                    </a>
+                </div>
+                <div class="md:border-l md:border-gray-400 pl-8 mr-8">
+                    <div class="flex justify-center items-center">
+                        <img src="./images/hotline.png" alt="hotline" class="w-8 h-8" />
+                        <div class="ml-2 flex-none">
+                            <strong>0966-000-000</strong>
+                            <br />
+                            <small>Thứ 2 - 6: 9:00 - 20:00</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center space-x-6 ml-auto">
+                    <a href="">
+                        <img src="./images/user.png" alt="User" class="w-8 h-8" />
+                    </a>
+                    <a href="" class="relative">
+                        <img src="./images/heart.png" alt="Heart" class="w-8 h-8" />
+                        <div class="absolute -top-2 -right-3 bg-green-500 rounded-full w-6 text-white flex justify-center items-center">0</div>
+                    </a>
+                    <a href="" class="relative">
+                        <img src="./images/cart.png" alt="Cart" class="w-8 h-8" />
+                        <div class="absolute -top-2 -right-3 bg-green-500 rounded-full w-6 text-white flex justify-center items-center">0</div>
+                    </a>
+                </div>
+            </div>
+            <div class="container mx-auto p-5 flex items-center">
+                <div class="mr-10 text-xl flex items-center gap-2 font-bold">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                    Shop by products
+                </div>
+                <nav class="border-l border-gray-800 pl-10">
+                    <ul class="flex items-center gap-10 text-xl font-semibold">
+                        <li class="hover:text-black transition ease-in-out duration-150">
+                            <a href="/">Home</a>
+                        </li>
+                        <li class="hover:text-black transition ease-in-out duration-150">
+                            <a href="/about.html">About</a>
+                        </li>
+                        <li class="hover:text-black transition ease-in-out duration-150">
+                            <a href="/product.html">Products</a>
+                        </li>
+                        <li class="hover:text-black transition ease-in-out duration-150">
+                            <a href="/blog.html">Blog</a>
+                        </li>
+                        <li class="hover:text-black transition ease-in-out duration-150">
+                            <a href="/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Line -->
+        <section class="container mx-auto px-5 mb-5">
+            <hr />
+        </section>
+
+        <!-- Breadcrumb -->
+        <section class="text-gray-600">
+            <div class="container mx-auto px-5 pb-5">
+                <ul class="flex items-center gap-2 text-md">
+                    <li>
+                        <a href="#" class="hover:underline">Home</a>
+                        <span class="ml-2"> > </span>
+                    </li>
+                    <li>
+                        <span>About</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Hero banner -->
+        <section>
+            <div class="container mx-auto px-5">
+                <div style="background-image: url('https://demo.theme-sky.com/agrofood/wp-content/uploads/2021/10/bg-home-7.jpg'); background-repeat: no-repeat; background-size: cover">
+                    <div class="py-32 pl-12 w-1/2 space-y-10">
+                        <h3 class="text-white font-semibold text-5xl leading-tight">We strive to provide you with the highest quality healthy products</h3>
+                        <p class="text-gray-50 text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, omnis aliquid. Inventore velit aut vero sapiente expedita nesciunt ullam quae molestiae, minus cupiditate accusamus, nemo praesentium distinctio tempora reiciendis commodi!</p>
+                        <div class="text-white">
+                            <ul class="flex justify-start items-center gap-5">
+                                <li class="flex gap-2">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M16.6404 19.09C16.1443 19.7232 15.5138 20.2382 14.7943 20.5979C14.0749 20.9577 13.2845 21.1531 12.4804 21.17H11.4804C9.58666 21.15 7.77248 20.4057 6.41037 19.09V19.09C1.00037 12 12.0004 2 12.0004 2L17.0004 9.45C17.9537 10.8935 18.4315 12.5991 18.3669 14.3278C18.3024 16.0564 17.6987 17.7216 16.6404 19.09V19.09Z" stroke="#FF6D22" stroke-width="1.83" stroke-miterlimit="10"></path>
+                                            <path d="M11.9697 9.30005V23" stroke="#FF6D22" stroke-width="1.83" stroke-miterlimit="10"></path>
+                                            <path d="M8.32031 14.78L11.9703 18.43" stroke="#FF6D22" stroke-width="1.83" stroke-miterlimit="10"></path>
+                                            <path d="M14.7097 12.04L11.9697 14.78" stroke="#FF6D22" stroke-width="1.83" stroke-miterlimit="10"></path>
+                                        </svg>
+                                    </span>
+                                    <span>Fresh deliveries straight from the farmers</span>
+                                </li>
+                                <li class="flex gap-2">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M6.26986 19.6401C7.32473 19.6401 8.17986 18.7849 8.17986 17.7301C8.17986 16.6752 7.32473 15.8201 6.26986 15.8201C5.215 15.8201 4.35986 16.6752 4.35986 17.7301C4.35986 18.7849 5.215 19.6401 6.26986 19.6401Z" stroke="#FF6D22" stroke-width="1.91" stroke-miterlimit="10"></path>
+                                            <path d="M17.7298 19.6401C18.7847 19.6401 19.6398 18.7849 19.6398 17.7301C19.6398 16.6752 18.7847 15.8201 17.7298 15.8201C16.675 15.8201 15.8198 16.6752 15.8198 17.7301C15.8198 18.7849 16.675 19.6401 17.7298 19.6401Z" stroke="#FF6D22" stroke-width="1.91" stroke-miterlimit="10"></path>
+                                            <path d="M4.36 17.7301H1.5V4.36011H18.68V8.18011L20.59 12.0001L22.5 13.0701V17.7301H19.64" stroke="#FF6D22" stroke-width="1.91" stroke-miterlimit="10"></path>
+                                            <path d="M15.8202 17.73H8.18018" stroke="#FF6D22" stroke-width="1.91" stroke-miterlimit="10"></path>
+                                            <path d="M20.5899 11.9999H14.8599V8.17993H18.6799" stroke="#FF6D22" stroke-width="1.91" stroke-miterlimit="10"></path>
+                                        </svg>
+                                    </span>
+                                    <span>Free delivery for first order</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Daily  -->
+        <section>
+            <div class="container mx-auto px-5 py-14">
+                <div class="flex flex-col text-center w-full mb-12">
+                    <h1 class="sm:text-5xl text-2xl font-medium title-font mb-4 text-green-500">+ 10,000 fresh products daily!</h1>
+                </div>
+                <div class="flex justify-center items-center gap-5" x-data="{}">
+                    <template x-for="item in 3">
+                        <div class="text-center">
+                            <img src="https://agrofood-be87.kxcdn.com/agrofood/wp-content/uploads/2021/10/feature3.jpg" alt="" />
+                            <h3 class="text-2xl font-semibold">Free delivery for first order and every next over $200</h3>
+                            <p>Integer volutpat efficitur tellus vel tempus.</p>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </section>
+
+        <!-- Line -->
+        <section class="container mx-auto px-5 mb-5">
+            <hr />
+        </section>
+
+        <!-- Customer's Reviews -->
+        <section>
+            <div class="container mx-auto px-5 py-14">
+                <div class="flex flex-col text-center w-full mb-12">
+                    <h1 class="sm:text-5xl text-2xl font-medium title-font mb-4 text-green-500">Our customer about us</h1>
+                </div>
+
+                <div class="slide-review flex flex-wrap">
+                    <div class="p-4 w-full">
+                        <div class="h-full bg-gray-100 p-8 rounded">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+                                <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+                            </svg>
+                            <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
+                            <ul class="flex justify-start mb-6">
+                                <li>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500 mr-1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500 mr-1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500 mr-1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" class="w-4 text-yellow-500 mr-1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path fill="currentColor" d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" class="w-4 text-yellow-500" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path fill="currentColor" d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path>
+                                    </svg>
+                                </li>
+                            </ul>
+                            <a class="inline-flex items-center">
+                                <img alt="testimonial" src="https://dummyimage.com/106x106" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center" />
+                                <span class="flex-grow flex flex-col pl-4">
+                                    <span class="title-font font-medium text-gray-900">Holden Caulfield</span>
+                                    <span class="text-gray-500 text-sm">Shop Name</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-4 w-full">
+                        <div class="h-full bg-gray-100 p-8 rounded">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+                                <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+                            </svg>
+                            <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
+                            <ul class="flex justify-start mb-6">
+                                <li>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500 mr-1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500 mr-1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500 mr-1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" class="w-4 text-yellow-500 mr-1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path fill="currentColor" d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" class="w-4 text-yellow-500" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path fill="currentColor" d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path>
+                                    </svg>
+                                </li>
+                            </ul>
+                            <a class="inline-flex items-center">
+                                <img alt="testimonial" src="https://dummyimage.com/106x106" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center" />
+                                <span class="flex-grow flex flex-col pl-4">
+                                    <span class="title-font font-medium text-gray-900">Holden Caulfield</span>
+                                    <span class="text-gray-500 text-sm">Shop Name</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-4 w-full">
+                        <div class="h-full bg-gray-100 p-8 rounded">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+                                <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+                            </svg>
+                            <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
+                            <ul class="flex justify-start mb-6">
+                                <li>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500 mr-1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500 mr-1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500 mr-1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" class="w-4 text-yellow-500 mr-1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path fill="currentColor" d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" class="w-4 text-yellow-500" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path fill="currentColor" d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path>
+                                    </svg>
+                                </li>
+                            </ul>
+                            <a class="inline-flex items-center">
+                                <img alt="testimonial" src="https://dummyimage.com/106x106" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center" />
+                                <span class="flex-grow flex flex-col pl-4">
+                                    <span class="title-font font-medium text-gray-900">Holden Caulfield</span>
+                                    <span class="text-gray-500 text-sm">Shop Name</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-4 w-full">
+                        <div class="h-full bg-gray-100 p-8 rounded">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+                                <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+                            </svg>
+                            <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
+                            <ul class="flex justify-start mb-6">
+                                <li>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500 mr-1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500 mr-1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-4 text-yellow-500 mr-1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" class="w-4 text-yellow-500 mr-1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path fill="currentColor" d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" class="w-4 text-yellow-500" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path fill="currentColor" d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path>
+                                    </svg>
+                                </li>
+                            </ul>
+                            <a class="inline-flex items-center">
+                                <img alt="testimonial" src="https://dummyimage.com/106x106" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center" />
+                                <span class="flex-grow flex flex-col pl-4">
+                                    <span class="title-font font-medium text-gray-900">Holden Caulfield</span>
+                                    <span class="text-gray-500 text-sm">Shop Name</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section class="text-gray-600 body-font">
+            <div class="container px-5 py-14 mx-auto">
+                <div class="flex flex-col text-center w-full mb-12">
+                    <h1 class="sm:text-5xl text-2xl font-medium title-font mb-4 text-green-500">Gallery</h1>
+                </div>
+                <div class="grid grid-cols-7 gap-1" x-data="{}">
+                    <template x-for="image in 14">
+                        <div class="hover:opacity-50 cursor-pointer transition ease-in-out duration-150">
+                            <img src="https://agrofood-be87.kxcdn.com/agrofood/wp-content/uploads/2021/10/gallery-5.jpg" alt="" />
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-gray-600 body-font bg-gray-50">
+            <div class="container px-5 pb-14 mx-auto">
+                <div class="flex justify-center items-center gap-20 py-5 text-black">
+                    <div class="flex justify-center items-center gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path d="M17.1399 19.09C16.6438 19.7232 16.0133 20.2382 15.2939 20.5979C14.5744 20.9577 13.7841 21.1531 12.9799 21.17H11.9799C10.0862 21.15 8.27199 20.4057 6.90988 19.09V19.09C1.49988 12 12.4999 2 12.4999 2L17.4999 9.45C18.4532 10.8935 18.931 12.5991 18.8665 14.3278C18.8019 16.0564 18.1982 17.7216 17.1399 19.09V19.09Z" stroke="#00B412" stroke-width="1.83" stroke-miterlimit="10"></path>
+                            <path d="M12.4702 9.30005V23" stroke="#00B412" stroke-width="1.83" stroke-miterlimit="10"></path>
+                            <path d="M8.81982 14.78L12.4698 18.43" stroke="#00B412" stroke-width="1.83" stroke-miterlimit="10"></path>
+                            <path d="M15.2102 12.04L12.4702 14.78" stroke="#00B412" stroke-width="1.83" stroke-miterlimit="10"></path>
+                        </svg>
+                        <span>Fresh deliveries straight from the farmers. Always best quality</span>
+                    </div>
+                    <div class="flex justify-center items-center gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M17.3167 3H6.18333L3 8.56667V20.5H20.5V8.56667L17.3167 3Z" stroke="#00B412" stroke-width="1.91" stroke-miterlimit="10"></path>
+                            <path d="M5.3833 17.3167H8.56663" stroke="#00B412" stroke-width="1.91" stroke-miterlimit="10"></path>
+                            <path d="M11.75 3V11.75" stroke="#00B412" stroke-width="1.91" stroke-miterlimit="10"></path>
+                            <path d="M3 8.56665H20.5" stroke="#00B412" stroke-width="1.91" stroke-miterlimit="10"></path>
+                        </svg>
+                        <span>Non-contact shipping. We care about your health!</span>
+                    </div>
+                    <div class="flex justify-center items-center gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path d="M6.76986 19.6401C7.82473 19.6401 8.67986 18.7849 8.67986 17.7301C8.67986 16.6752 7.82473 15.8201 6.76986 15.8201C5.715 15.8201 4.85986 16.6752 4.85986 17.7301C4.85986 18.7849 5.715 19.6401 6.76986 19.6401Z" stroke="#00B412" stroke-width="1.91" stroke-miterlimit="10"></path>
+                            <path d="M18.2298 19.6401C19.2847 19.6401 20.1398 18.7849 20.1398 17.7301C20.1398 16.6752 19.2847 15.8201 18.2298 15.8201C17.175 15.8201 16.3198 16.6752 16.3198 17.7301C16.3198 18.7849 17.175 19.6401 18.2298 19.6401Z" stroke="#00B412" stroke-width="1.91" stroke-miterlimit="10"></path>
+                            <path d="M4.86 17.7301H2V4.36011H19.18V8.18011L21.09 12.0001L23 13.0701V17.7301H20.14" stroke="#00B412" stroke-width="1.91" stroke-miterlimit="10"></path>
+                            <path d="M16.3202 17.73H8.68018" stroke="#00B412" stroke-width="1.91" stroke-miterlimit="10"></path>
+                            <path d="M21.0899 11.9999H15.3599V8.17993H19.1799" stroke="#00B412" stroke-width="1.91" stroke-miterlimit="10"></path>
+                        </svg>
+                        <span>Free delivery for first order and every next over $200</span>
+                    </div>
+                </div>
+                <hr class="pb-14" />
+                <div class="flex flex-wrap md:text-left text-center order-first">
+                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+                        <nav class="list-none mb-10">
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                            </li>
+                        </nav>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+                        <nav class="list-none mb-10">
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                            </li>
+                        </nav>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+                        <nav class="list-none mb-10">
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                            </li>
+                        </nav>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">SUBSCRIBE</h2>
+                        <div class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
+                            <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+                                <label for="footer-field" class="leading-7 text-sm text-gray-600">Placeholder</label>
+                                <input type="text" id="footer-field" name="footer-field" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                            </div>
+                            <button class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
+                        </div>
+                        <p class="text-gray-500 text-sm mt-2 md:text-left text-center">Bitters chicharrones fanny pack <br class="lg:block hidden" />waistcoat green juice</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-100">
+                <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+                    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                        <span class="ml-3 text-xl">Agricultural Food</span>
+                    </a>
+                    <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">
+                        © 2022 Agricultural Food —
+                        <a href="#" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@Dan</a>
+                    </p>
+                    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                        <a class="text-gray-500">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a class="ml-3 text-gray-500">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                            </svg>
+                        </a>
+                        <a class="ml-3 text-gray-500">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                            </svg>
+                        </a>
+                        <a class="ml-3 text-gray-500">
+                            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                            </svg>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.slide-review').slick({
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    arrows: false,
+                    infinite: true,
+                    cssEase: 'linear',
+                })
+            })
+        </script>
+    </body>
+</html>

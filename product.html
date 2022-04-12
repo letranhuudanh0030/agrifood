@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" href="/style.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    </head>
+    <body>
+        <header class="text-gray-600 body-font">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+                <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+                    <span class="ml-3 text-3xl">Logo Agricultural Food</span>
+                </a>
+                <div class="relative mx-8">
+                    <input type="text" class="bg-gray-200 text-md rounded-full w-96 px-4 pl-9 py-2 focus:outline-none" placeholder="Search for products" />
+                    <div class="absolute top-0 flex items-center h-full ml-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="flex flex-wrap items-center text-base justify-center mx-8">
+                    <a href="" class="mx-3 hover:text-gray-900">
+                        <img src="./images/facebook.png" alt="facebook" class="w-8 h-8" />
+                    </a>
+                    <a href="" class="mx-3 hover:text-gray-900">
+                        <img src="./images/youtube.png" alt="youtube" class="w-8 h-8" />
+                    </a>
+                    <a href="" class="mx-3 hover:text-gray-900">
+                        <img src="./images/zalo.png" alt="zalo" class="w-8 h-8" />
+                    </a>
+                    <a href="" class="mx-3 hover:text-gray-900">
+                        <img src="./images/linkedin.png" alt="linkedin" class="w-8 h-8" />
+                    </a>
+                </div>
+                <div class="md:border-l md:border-gray-400 pl-8 mr-8">
+                    <div class="flex justify-center items-center">
+                        <img src="./images/hotline.png" alt="hotline" class="w-8 h-8" />
+                        <div class="ml-2 flex-none">
+                            <strong>0966-000-000</strong>
+                            <br />
+                            <small>Thứ 2 - 6: 9:00 - 20:00</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center space-x-6 ml-auto">
+                    <a href="">
+                        <img src="./images/user.png" alt="User" class="w-8 h-8" />
+                    </a>
+                    <a href="" class="relative">
+                        <img src="./images/heart.png" alt="Heart" class="w-8 h-8" />
+                        <div class="absolute -top-2 -right-3 bg-green-500 rounded-full w-6 text-white flex justify-center items-center">0</div>
+                    </a>
+                    <a href="" class="relative">
+                        <img src="./images/cart.png" alt="Cart" class="w-8 h-8" />
+                        <div class="absolute -top-2 -right-3 bg-green-500 rounded-full w-6 text-white flex justify-center items-center">0</div>
+                    </a>
+                </div>
+            </div>
+            <div class="container mx-auto p-5 flex items-center">
+                <div class="mr-10 text-xl flex items-center gap-2 font-bold">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                    Shop by products
+                </div>
+                <nav class="border-l border-gray-800 pl-10">
+                    <ul class="flex items-center gap-10 text-xl font-semibold">
+                        <li class="hover:text-black transition ease-in-out duration-150">
+                            <a href="/">Home</a>
+                        </li>
+                        <li class="hover:text-black transition ease-in-out duration-150">
+                            <a href="/about.html">About</a>
+                        </li>
+                        <li class="hover:text-black transition ease-in-out duration-150">
+                            <a href="/product.html">Products</a>
+                        </li>
+                        <li class="hover:text-black transition ease-in-out duration-150">
+                            <a href="/blog.html">Blog</a>
+                        </li>
+                        <li class="hover:text-black transition ease-in-out duration-150">
+                            <a href="/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Line -->
+        <section class="container mx-auto px-5 mb-5">
+            <hr />
+        </section>
+
+        <!-- Breadcrumb -->
+        <section class="text-gray-600">
+            <div class="container mx-auto px-5 pb-5">
+                <ul class="flex items-center gap-2 text-md">
+                    <li>
+                        <a href="#" class="hover:underline">Home</a>
+                        <span class="ml-2"> > </span>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">Shop</a>
+                        <span class="ml-2"> > </span>
+                    </li>
+                    <li>
+                        <span>Category</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- List Product -->
+        <section class="bg-gray-50">
+            <div class="container mx-auto pb-14 px-5 flex flex-col lg:flex-row gap-5 justify-start">
+                <div class="lg:w-1/6">
+                    <div class="mt-6">
+                        <h3 class="mb-3">Filter by</h3>
+                        <ul x-data="{}">
+                            <template x-for="cate in 8">
+                                <li class="mb-3">
+                                    <a href="" class="py-1 px-3 bg-white shadow border text-black hover:bg-green-50 hover:border-green-500 transition ease-in-out duration-150">Bakery <span class="text-gray-400 font-semibold text-sm">(7)</span></a>
+                                </li>
+                            </template>
+                        </ul>
+                    </div>
+                    <div class="mt-12">
+                        <h3 class="mb-3">Type</h3>
+                        <ul x-data="{}">
+                            <template x-for="cate in 8">
+                                <li class="mb-3">
+                                    <a href="" class="py-1 px-3 bg-white shadow border text-black hover:bg-green-50 hover:border-green-500 transition ease-in-out duration-150">Bankroft <span class="text-gray-400 font-semibold text-sm">(7)</span></a>
+                                </li>
+                            </template>
+                        </ul>
+                    </div>
+                    <div class="mt-12">
+                        <h3 class="mb-3">By price</h3>
+                        <div x-data="range()" x-init="mintrigger(); maxtrigger()" class="relative max-w-xl w-full">
+                            <div>
+                                <input type="range" step="100" x-bind:min="min" x-bind:max="max" x-on:input="mintrigger" x-model="minprice" class="absolute pointer-events-none appearance-none z-20 h-2 w-full opacity-0 cursor-pointer" />
+
+                                <input type="range" step="100" x-bind:min="min" x-bind:max="max" x-on:input="maxtrigger" x-model="maxprice" class="absolute pointer-events-none appearance-none z-20 h-2 w-full opacity-0 cursor-pointer" />
+
+                                <div class="relative z-10 h-2">
+                                    <div class="absolute z-10 left-0 right-0 bottom-0 top-0 rounded-md bg-gray-200"></div>
+
+                                    <div class="absolute z-20 top-0 bottom-0 rounded-md bg-green-300" x-bind:style="'right:'+maxthumb+'%; left:'+minthumb+'%'"></div>
+
+                                    <div class="absolute z-30 w-6 h-6 top-0 left-0 bg-green-500 rounded-full -mt-2" x-bind:style="'left: '+minthumb+'%'"></div>
+
+                                    <div class="absolute z-30 w-6 h-6 top-0 right-0 bg-green-500 rounded-full -mt-2" x-bind:style="'right: '+maxthumb+'%'"></div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-between pt-5 space-x-4 text-sm text-gray-700">
+                                <div>
+                                    <input type="hidden" maxlength="5" x-on:input.debounce="mintrigger" x-model="minprice" wire:model.debounce.300="minPrice" class="w-24 px-3 py-2 text-center border border-gray-200 rounded-lg bg-gray-50 focus:border-yellow-400 focus:outline-none" />
+                                    <div class="w-24 px-3 py-2 text-center border border-gray-200 rounded-lg bg-gray-50 focus:border-yellow-400 focus:outline-non" x-text="minprice + ' đ'"></div>
+                                </div>
+                                <div>
+                                    <input type="hidden" maxlength="5" x-on:input.debounce.300="maxtrigger" x-model="maxprice" wire:model.debounce="maxPrice" class="w-24 px-3 py-2 text-center border border-gray-200 rounded-lg bg-gray-50 focus:border-yellow-400 focus:outline-none" />
+                                    <div class="w-24 px-3 py-2 text-center border border-gray-200 rounded-lg bg-gray-50 focus:border-yellow-400 focus:outline-non" x-text="maxprice + ' đ'"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-10">
+                        <button class="px-10 py-2 bg-green-500 text-white border border-green-500 hover:bg-white hover:text-green-500 shadow transition ease-in-out duration-150">Filter</button>
+                    </div>
+
+                    <div class="mt-12">
+                        <h3 class="mb-3">Brand</h3>
+                        <div class="flex justify-start">
+                            <div x-data="{}">
+                                <template x-for="brand in 8">
+                                    <div class="form-check">
+                                        <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer peer" type="checkbox" value="" :id="'Checkbox'+brand" />
+                                        <label class="form-check-label inline-block text-gray-800 peer-checked:font-semibold cursor-pointer" :for="'Checkbox'+brand">Shop brand <span class="text-gray-400 font-semibold text-sm">(7)</span></label>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-5/6">
+                    <div class="mt-6">
+                        <div class="mb-7 flex justify-end items-center">
+                            <div class="flex ml-6 items-center">
+                                <span class="mr-3 text-gray-500">Brands</span>
+                                <div class="relative">
+                                    <select class="rounded border appearance-none border-gray-300 py-1 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base pl-3 pr-10">
+                                        <option>All brands</option>
+                                        <option>Brand 1</option>
+                                        <option>Brand 2</option>
+                                        <option>Brand 3</option>
+                                    </select>
+                                    <span class="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4" viewBox="0 0 24 24">
+                                            <path d="M6 9l6 6 6-6"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="flex ml-6 items-center">
+                                <span class="mr-3 text-gray-500">Sort by</span>
+                                <div class="relative">
+                                    <select class="rounded border appearance-none border-gray-300 py-1 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base pl-3 pr-10">
+                                        <option>Latest</option>
+                                        <option>Average rating</option>
+                                        <option>Price: low to high</option>
+                                        <option>Price: high to low</option>
+                                    </select>
+                                    <span class="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4" viewBox="0 0 24 24">
+                                            <path d="M6 9l6 6 6-6"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="flex ml-6 items-center">
+                                <span class="mr-3 text-gray-500">Show</span>
+                                <div class="relative">
+                                    <select class="rounded border appearance-none border-gray-300 py-1 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base pl-3 pr-10">
+                                        <option>32</option>
+                                        <option>64</option>
+                                        <option>96</option>
+                                        <option>128</option>
+                                    </select>
+                                    <span class="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4" viewBox="0 0 24 24">
+                                            <path d="M6 9l6 6 6-6"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-6 gap-1" x-data="{}">
+                            <template x-for="product in 16">
+                                <div class="w-full cursor-pointer relative bg-white group border">
+                                    <a :href="`product_detail.html`" class="block relative h-48 rounded overflow-hidden">
+                                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://agrofood-be87.kxcdn.com/agrofood/wp-content/uploads/2021/04/05-300x300.jpg" />
+                                    </a>
+                                    <div class="px-2 py-4">
+                                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                                        <h2 class="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
+                                        <p class="mt-1">$16.00</p>
+                                    </div>
+                                    <a :href="`product_detail.html`" class="absolute inset-0"></a>
+                                    <div class="">
+                                        <!-- 
+                                            #hết hàng
+                                            #hot
+                                            #mới
+                                            #giảm giá 
+                                        -->
+                                    </div>
+                                    <div class="absolute top-2 right-2 flex flex-col space-y-1">
+                                        <button title="Wishlist" class="opacity-50 group-hover:opacity-100 ease-in-out duration-150">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" :fill="product%2==0 ? 'none' : 'red'" viewBox="0 0 24 24" :stroke="product%2==0 ? 'currentColor' : 'red'" stroke-width="2">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                            </svg>
+                                        </button>
+                                        <button title="Qick View" class="opacity-0 group-hover:opacity-100 ease-in-out duration-150">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-gray-600 body-font bg-gray-50">
+            <div class="container px-5 pb-14 mx-auto">
+                <hr class="" />
+                <div class="flex justify-center items-center gap-20 py-5 text-black">
+                    <div class="flex justify-center items-center gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path d="M17.1399 19.09C16.6438 19.7232 16.0133 20.2382 15.2939 20.5979C14.5744 20.9577 13.7841 21.1531 12.9799 21.17H11.9799C10.0862 21.15 8.27199 20.4057 6.90988 19.09V19.09C1.49988 12 12.4999 2 12.4999 2L17.4999 9.45C18.4532 10.8935 18.931 12.5991 18.8665 14.3278C18.8019 16.0564 18.1982 17.7216 17.1399 19.09V19.09Z" stroke="#00B412" stroke-width="1.83" stroke-miterlimit="10"></path>
+                            <path d="M12.4702 9.30005V23" stroke="#00B412" stroke-width="1.83" stroke-miterlimit="10"></path>
+                            <path d="M8.81982 14.78L12.4698 18.43" stroke="#00B412" stroke-width="1.83" stroke-miterlimit="10"></path>
+                            <path d="M15.2102 12.04L12.4702 14.78" stroke="#00B412" stroke-width="1.83" stroke-miterlimit="10"></path>
+                        </svg>
+                        <span>Fresh deliveries straight from the farmers. Always best quality</span>
+                    </div>
+                    <div class="flex justify-center items-center gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M17.3167 3H6.18333L3 8.56667V20.5H20.5V8.56667L17.3167 3Z" stroke="#00B412" stroke-width="1.91" stroke-miterlimit="10"></path>
+                            <path d="M5.3833 17.3167H8.56663" stroke="#00B412" stroke-width="1.91" stroke-miterlimit="10"></path>
+                            <path d="M11.75 3V11.75" stroke="#00B412" stroke-width="1.91" stroke-miterlimit="10"></path>
+                            <path d="M3 8.56665H20.5" stroke="#00B412" stroke-width="1.91" stroke-miterlimit="10"></path>
+                        </svg>
+                        <span>Non-contact shipping. We care about your health!</span>
+                    </div>
+                    <div class="flex justify-center items-center gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path d="M6.76986 19.6401C7.82473 19.6401 8.67986 18.7849 8.67986 17.7301C8.67986 16.6752 7.82473 15.8201 6.76986 15.8201C5.715 15.8201 4.85986 16.6752 4.85986 17.7301C4.85986 18.7849 5.715 19.6401 6.76986 19.6401Z" stroke="#00B412" stroke-width="1.91" stroke-miterlimit="10"></path>
+                            <path d="M18.2298 19.6401C19.2847 19.6401 20.1398 18.7849 20.1398 17.7301C20.1398 16.6752 19.2847 15.8201 18.2298 15.8201C17.175 15.8201 16.3198 16.6752 16.3198 17.7301C16.3198 18.7849 17.175 19.6401 18.2298 19.6401Z" stroke="#00B412" stroke-width="1.91" stroke-miterlimit="10"></path>
+                            <path d="M4.86 17.7301H2V4.36011H19.18V8.18011L21.09 12.0001L23 13.0701V17.7301H20.14" stroke="#00B412" stroke-width="1.91" stroke-miterlimit="10"></path>
+                            <path d="M16.3202 17.73H8.68018" stroke="#00B412" stroke-width="1.91" stroke-miterlimit="10"></path>
+                            <path d="M21.0899 11.9999H15.3599V8.17993H19.1799" stroke="#00B412" stroke-width="1.91" stroke-miterlimit="10"></path>
+                        </svg>
+                        <span>Free delivery for first order and every next over $200</span>
+                    </div>
+                </div>
+                <hr class="pb-14" />
+                <div class="flex flex-wrap md:text-left text-center order-first">
+                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+                        <nav class="list-none mb-10">
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                            </li>
+                        </nav>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+                        <nav class="list-none mb-10">
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                            </li>
+                        </nav>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+                        <nav class="list-none mb-10">
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                            </li>
+                        </nav>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">SUBSCRIBE</h2>
+                        <div class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
+                            <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+                                <label for="footer-field" class="leading-7 text-sm text-gray-600">Placeholder</label>
+                                <input type="text" id="footer-field" name="footer-field" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                            </div>
+                            <button class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
+                        </div>
+                        <p class="text-gray-500 text-sm mt-2 md:text-left text-center">Bitters chicharrones fanny pack <br class="lg:block hidden" />waistcoat green juice</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-100">
+                <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+                    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                        <span class="ml-3 text-xl">Agricultural Food</span>
+                    </a>
+                    <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">
+                        © 2022 Agricultural Food —
+                        <a href="#" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@Dan</a>
+                    </p>
+                    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                        <a class="text-gray-500">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a class="ml-3 text-gray-500">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                            </svg>
+                        </a>
+                        <a class="ml-3 text-gray-500">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                            </svg>
+                        </a>
+                        <a class="ml-3 text-gray-500">
+                            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                            </svg>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            function range() {
+                return {
+                    minprice: 0,
+                    maxprice: 10000,
+                    min: 0,
+                    max: 10000,
+                    minthumb: 0,
+                    maxthumb: 0,
+                    mintrigger() {
+                        this.validation()
+                        this.minprice = Math.min(this.minprice, this.maxprice - 500)
+                        this.minthumb = ((this.minprice - this.min) / (this.max - this.min)) * 100
+                    },
+                    maxtrigger() {
+                        this.validation()
+                        this.maxprice = Math.max(this.maxprice, this.minprice + 200)
+                        this.maxthumb = 100 - ((this.maxprice - this.min) / (this.max - this.min)) * 100
+                    },
+                    validation() {
+                        if (/^\d*$/.test(this.minprice)) {
+                            if (this.minprice > this.max) {
+                                this.minprice = 9500
+                            }
+                            if (this.minprice < this.min) {
+                                this.minprice = this.min
+                            }
+                        } else {
+                            this.minprice = 0
+                        }
+                        if (/^\d*$/.test(this.maxprice)) {
+                            if (this.maxprice > this.max) {
+                                this.maxprice = this.max
+                            }
+                            if (this.maxprice < this.min) {
+                                this.maxprice = 200
+                            }
+                        } else {
+                            this.maxprice = 10000
+                        }
+                    },
+                }
+            }
+        </script>
+    </body>
+</html>
